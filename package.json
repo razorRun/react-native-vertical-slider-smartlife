@@ -1,6 +1,6 @@
 {
   "name": "react-native-vertical-slider-smartlife",
-  "version": "1.0.7",
+  "version": "1.0.3",
   "description": "A vertical Slider for React Native written entirely in javascript.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -20,14 +20,7 @@
     "!**/__mocks__"
   ],
   "scripts": {
-    "test": "jest",
-    "typescript": "tsc --noEmit",
-    "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "prepare": "bob build",
-    "release": "dotenv release-it --dry-run",
-    "example": "yarn --cwd example",
-    "pods": "cd example && pod-install --quiet",
-    "bootstrap": "yarn example && yarn && yarn pods"
+    "test": "jest"
   },
   "keywords": [
     "react-native",
@@ -71,5 +64,45 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
-  }
+  },
+  "jest": {
+    "preset": "react-native",
+    "modulePathIgnorePatterns": [
+      "<rootDir>/example/node_modules",
+      "<rootDir>/lib/"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "yarn lint && yarn typescript"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "@react-native-community",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "quoteProps": "consistent",
+          "singleQuote": true,
+          "tabWidth": 2,
+          "trailingComma": "es5",
+          "useTabs": false
+        }
+      ]
+    }
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ]
 }
