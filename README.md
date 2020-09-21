@@ -1,6 +1,8 @@
+A <VerticalSlider> component for react-native projects was initially cloned from rn-vertical-slider And been actively maintaining it as we wanted to avoid future changes that effect our existing applications
+
 # 🆕 React Native Vertical Slider 🎚
 
-#### **(rn-vertical-slider)**
+#### **(react-native-vertical-slider-smartlife)**
 
 ###### A vertical Slider for React Native written entirely in javascript. Support this project with a ★ on [**Github**](https://github.com/razorRun/react-native-vertical-slider-smartlife).
 
@@ -16,7 +18,7 @@
 - To add this slider to your project :
 
 ```
-npm install rn-vertical-slider
+npm install react-native-vertical-slider-smartlife
 ```
 
 ## 🎨 Usage
@@ -114,3 +116,6 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 ## License
 
 MIT
+
+### credits
+sacmii
