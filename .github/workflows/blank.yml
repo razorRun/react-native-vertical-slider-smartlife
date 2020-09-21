@@ -21,6 +21,7 @@ jobs:
         run: |
           git config --global user.name 'GIT Package Updater'
           git config --global user.email 'razorRun@users.noreply.github.com'
+          npm install
           npm version patch
           git push
       - run: npm ci
