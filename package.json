@@ -1,6 +1,6 @@
 {
   "name": "react-native-vertical-slider-smartlife",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A vertical Slider for React Native written entirely in javascript.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
