@@ -1,6 +1,6 @@
 A `<VerticalSlider>` component for react-native projects was initially cloned from [`rn-vertical-slider`](https://github.com/sacmii/rn-vertical-slider#readme) And been actively maintaining it as we wanted to avoid any future changes to original repo that effects our existing applications. 
 
-# 🆕 React Native Vertical Slider 🎚
+# 🆕 React Native Vertical Slider
 
 #### **(react-native-vertical-slider-smartlife)**
 
